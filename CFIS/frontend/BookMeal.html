@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Meal | Food Sustainability Platform</title>
+  <link rel="stylesheet" href="BookMeal.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">🍽️ Food Sustainability</div>
+    <nav>
+      <a href="Dashboard.html">Dashboard</a>
+      <a class="active" href="BookMeal.html">Book Meal</a>
+      <a href="BookingHistory.html">History</a>
+      <a href="Profile.html">Profile</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <div class="heading">
+      <div>
+        <p class="small">Meal Management</p>
+        <h1>Book Your Meal</h1>
+        <p>Select the meal you want to attend.</p>
+      </div>
+    </div>
+
+    <form id="bookingForm" class="booking-card">
+      <label for="date">Meal Date</label>
+      <input type="date" id="date" required>
+
+      <div class="meal-grid">
+        <label class="meal-option">
+          <input type="radio" name="meal" value="Breakfast" required>
+          <span class="meal-icon">🌅</span>
+          <strong>Breakfast</strong>
+          <small>8:00 AM - 10:00 AM</small>
+          <small>Aloo Paratha, Curd & Tea</small>
+        </label>
+
+        <label class="meal-option">
+          <input type="radio" name="meal" value="Lunch">
+          <span class="meal-icon">☀️</span>
+          <strong>Lunch</strong>
+          <small>12:30 PM - 2:30 PM</small>
+          <small>Rice, Dal, Roti & Vegetable</small>
+        </label>
+
+        <label class="meal-option">
+          <input type="radio" name="meal" value="Dinner">
+          <span class="meal-icon">🌙</span>
+          <strong>Dinner</strong>
+          <small>7:30 PM - 9:30 PM</small>
+          <small>Paneer, Roti, Rice & Salad</small>
+        </label>
+      </div>
+
+      <button type="submit">Confirm Booking</button>
+      <p id="message"></p>
+    </form>
+  </main>
+
+  <script src="BookMeal.js"></script>
+</body>
+</html>

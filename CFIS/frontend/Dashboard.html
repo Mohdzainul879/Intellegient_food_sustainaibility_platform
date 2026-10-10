@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard | Food Sustainability Platform</title>
+  <link rel="stylesheet" href="Dashboard.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">🍽️ Food Sustainability</div>
+    <nav>
+      <a href="Dashboard.html">Dashboard</a>
+      <a href="BookMeal.html">Book Meal</a>
+      <a href="BookingHistory.html">History</a>
+      <a href="Profile.html">Profile</a>
+      <button id="logoutBtn">Logout</button>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="welcome">
+      <div>
+        <p class="small">Welcome back</p>
+        <h1 id="userName">Student</h1>
+        <p>Manage your meals and help reduce hostel food wastage.</p>
+      </div>
+      <a class="primary" href="BookMeal.html">+ Book Today's Meal</a>
+    </section>
+
+    <section class="stats">
+      <div class="card">
+        <span>Today's Booking</span>
+        <strong id="todayBooking">0</strong>
+      </div>
+      <div class="card">
+        <span>Total Bookings</span>
+        <strong id="totalBookings">0</strong>
+      </div>
+      <div class="card">
+        <span>Attendance Rate</span>
+        <strong id="attendanceRate">92%</strong>
+      </div>
+      <div class="card">
+        <span>Accountability Score</span>
+        <strong id="score">85</strong>
+      </div>
+    </section>
+
+    <section class="content-grid">
+      <div class="panel">
+        <h2>Today's Menu</h2>
+        <div id="menuList"></div>
+      </div>
+
+      <div class="panel">
+        <h2>Quick Actions</h2>
+        <a class="action" href="BookMeal.html">🍛 Book a Meal</a>
+        <a class="action" href="BookingHistory.html">📋 View Booking History</a>
+        <a class="action" href="Profile.html">👤 Update Profile</a>
+      </div>
+    </section>
+  </main>
+
+  <script src="Dashboard.js"></script>
+</body>
+</html>

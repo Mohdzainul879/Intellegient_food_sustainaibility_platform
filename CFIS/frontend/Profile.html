@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile | Food Sustainability Platform</title>
+  <link rel="stylesheet" href="Profile.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">🍽️ Food Sustainability</div>
+    <nav>
+      <a href="Dashboard.html">Dashboard</a>
+      <a href="BookMeal.html">Book Meal</a>
+      <a href="BookingHistory.html">History</a>
+      <a class="active" href="Profile.html">Profile</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <div class="heading">
+      <p class="small">Account</p>
+      <h1>My Profile</h1>
+      <p>View and update your hostel account details.</p>
+    </div>
+
+    <form id="profileForm" class="profile-card">
+      <div class="avatar">👤</div>
+
+      <label>Full Name</label>
+      <input id="name" type="text" required>
+
+      <label>Email</label>
+      <input id="email" type="email" required>
+
+      <label>Hostel / Room</label>
+      <input id="room" type="text" required>
+
+      <label>Accountability Score</label>
+      <input value="85" disabled>
+
+      <button type="submit">Save Changes</button>
+      <p id="message"></p>
+    </form>
+  </main>
+
+  <script src="Profile.js"></script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f5f7fa;
+  color: #1f2937;
+}
+
+.topbar {
+  height: 68px;
+  background: white;
+  border-bottom: 1px solid #e5e7eb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 6%;
+}
+
+.brand {
+  font-weight: 700;
+  color: #17324d;
+}
+
+nav {
+  display: flex;
+  gap: 22px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #475467;
+}
+
+nav a.active {
+  color: #2878c8;
+  font-weight: 700;
+}
+
+.container {
+  width: 88%;
+  max-width: 1050px;
+  margin: 40px auto;
+}
+
+.small {
+  color: #667085;
+  font-size: 14px;
+}
+
+.heading h1 {
+  color: #17324d;
+  margin: 5px 0;
+}
+
+.heading p:last-child {
+  color: #667085;
+}
+
+.booking-card {
+  margin-top: 25px;
+  background: white;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 2px 15px rgba(0,0,0,.05);
+}
+
+.booking-card > label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+#date {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #d0d5dd;
+  border-radius: 8px;
+}
+
+.meal-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin: 25px 0;
+}
+
+.meal-option {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  padding: 22px;
+  border: 1px solid #d0d5dd;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.meal-option:has(input:checked) {
+  border-color: #2878c8;
+  background: #f1f7fd;
+}
+
+.meal-option input {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+}
+
+.meal-icon {
+  font-size: 30px;
+}
+
+.meal-option strong {
+  color: #17324d;
+}
+
+.meal-option small {
+  color: #667085;
+}
+
+button {
+  border: 0;
+  background: #2878c8;
+  color: white;
+  padding: 13px 22px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+#message {
+  margin-top: 15px;
+  min-height: 20px;
+}
+
+
